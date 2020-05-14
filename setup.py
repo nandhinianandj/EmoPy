@@ -29,7 +29,7 @@ setuptools.setup(
        'scikit-image>=0.13.1',
        'scikit-learn>=0.19.1',
        'scikit-neuralnetwork>=0.7',
-       'scipy==1.0.0',
+       'scipy>=1.0.0',
        'tensorflow==1.13.1',
        'opencv-python',
        'h5py',

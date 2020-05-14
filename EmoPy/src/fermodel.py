@@ -3,6 +3,7 @@ import cv2
 from scipy import misc
 import numpy as np
 import json
+from skimage.io import imread
 from pkg_resources import resource_filename
 
 class FERModel:
@@ -50,7 +51,7 @@ class FERModel:
 
         :param images: image file (jpg or png format)
         """
-        image = misc.imread(image_file)
+        image = imread(image_file)
         return self.predict_from_ndarray(image)
 
     def predict_from_ndarray(self, image_array):
